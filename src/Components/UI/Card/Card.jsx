@@ -6,7 +6,6 @@ export const Card = ({data}) => {
                 <img className="card_img" alt={data.name} src={data.image}></img>
             </div>
             <p className="card_gender">{data.gender}</p>
-
         </div>
     )   
 }

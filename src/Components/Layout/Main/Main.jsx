@@ -7,11 +7,11 @@ import { Card } from "../../UI/Card/Card";
 export const Main =()=>{
 
     useEffect(() =>{
-        Fetch_URL('')
+        Fetch_URL()
     },[])
 
     const [data, setData] = useState([{name:' ',image:'',gender:' '}]);
-    const [dato, setDato]=useState({name:' ', image:' ',gender:' '})
+    const [dato, setDato]=useState({name:' ', image:' ',gender:' '}) 
     const URL = 'https://rickandmortyapi.com/api/character/';
 
     const Fetch_URL=()=> { 
@@ -23,13 +23,18 @@ export const Main =()=>{
         data.map(element=>{
             if (event.target.value == element.id){
                 setDato(element);
-            }    
+            }
         })
     }
+
+
+    
     return(
-        <div className="Main">
-            <Select datos={data} evento={Cards}/>
-            <Card data={dato}></Card>
-        </div>
+        <>
+            <main className="Main">
+                <Select datos={data} evento={Cards}/>
+                <Card data={dato}></Card>
+            </main>
+        </>
     );
 }
