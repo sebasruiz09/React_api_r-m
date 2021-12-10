@@ -1,3 +1,4 @@
+import './Home.css'
 import { Main } from "../../Layout/Main/Main";
 import { Header } from "../../Layout/Header/Header";
 import { Footer } from "../../Layout/Footer/Footer";
@@ -6,9 +7,11 @@ import { Footer } from "../../Layout/Footer/Footer";
 export const Home =() =>{
     return(
         <>
-            <Header/>
-            <Main/>
-            <Footer/>
+            <div className="home_container">
+                <Header/>
+                <Main/>
+                <Footer/>
+            </div>
         </>
     )
 }

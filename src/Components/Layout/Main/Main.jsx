@@ -1,5 +1,5 @@
+import './Main.css'
 import React, { useEffect, useState } from 'react';
-import './Main.css';
 import { Select } from "../../UI/Select/Select";
 import { Card } from "../../UI/Card/Card";
 

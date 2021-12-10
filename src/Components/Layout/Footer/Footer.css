@@ -1,13 +1,13 @@
-.card_container{
-    margin: auto;
+.footer{
+    margin-top: 5%;
 }
 
-.card_name{
-    font-size: 120%;
+.name_footer{
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 
-.card_gender{
-    font-size: 120%;
+.age-footer{
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }

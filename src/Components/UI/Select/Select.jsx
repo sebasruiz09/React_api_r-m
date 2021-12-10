@@ -1,9 +1,9 @@
-
+import './Select.css'
 
 
 export const Select =({datos, evento})=>{
     return(
-        <select onChange={evento}>
+        <select className="selector" onChange={evento}>
             <option value="All characters">All Chacarters</option>
             {
                 datos.map(element=>(
